@@ -51,5 +51,44 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng marstonCampus = new LatLng(51.762032883566775, -1.2328155199681345);
         LatLng headhillCampus = new LatLng(51.754182202136676, -1.228725102591681);
 
+        // Accommodation Positions
+        LatLng crescentAccom = new LatLng(51.737256575302325, -1.2080877145378135);
+        LatLng beechAccom = new LatLng(51.75802390436033, -1.2169465633581151);
+        LatLng cheneyAccom = new LatLng(51.75336365686612, -1.2302377746553383);
+        LatLng cliveAccom = new LatLng(51.757386901756135, -1.2311529786930548);
+        LatLng dorsetAccom = new LatLng(51.758406443371406, -1.216170018083167);
+        LatLng friarAccom = new LatLng(51.76648057510883, -1.2346541216304485);
+        LatLng harcourtAccom = new LatLng(51.740634585035124, -1.2930541821866695);
+        LatLng paradeAccom = new LatLng(51.7420727529903, -1.2029768185865375);
+        LatLng sinnetAccom = new LatLng(51.746524100438236, -1.2272004823284175);
+        LatLng warnefordAccom = new LatLng(51.75221382333157, -1.2201104177007245);
+        LatLng westminsterAccom = new LatLng(51.740265071384414, -1.2946117008823386);
+        LatLng paulAccom = new LatLng(51.7415201166216, -1.2031846605834298);
+        LatLng sladeAccom = new LatLng(51.74377168540099, -1.2000524445617493);
+
+        // Position Markers
+        mMap.addMarker(new MarkerOptions().position(headingtonCampus).title("Headington Campus"));
+        mMap.addMarker(new MarkerOptions().position(headhillCampus).title("Headington Hill Campus"));
+        mMap.addMarker(new MarkerOptions().position(marstonCampus).title("Marston Campus"));
+        mMap.addMarker(new MarkerOptions().position(harcourtCampus).title("Harcourt Hill Campus"));
+        mMap.addMarker(new MarkerOptions().position(wheatleyCampus).title("Wheatley Campus"));
+        mMap.addMarker(new MarkerOptions().position(swindonCampus).title("Swindon Campus"));
+
+        mMap.addMarker(new MarkerOptions().position(crescentAccom).title("Crescent Hall"));
+        mMap.addMarker(new MarkerOptions().position(beechAccom).title("Beech House"));
+        mMap.addMarker(new MarkerOptions().position(cheneyAccom).title("Cheney Student Village"));
+        mMap.addMarker(new MarkerOptions().position(cliveAccom).title("Clive Booth"));
+        mMap.addMarker(new MarkerOptions().position(dorsetAccom).title("Dorset House"));
+        mMap.addMarker(new MarkerOptions().position(friarAccom).title("Friar Court"));
+        mMap.addMarker(new MarkerOptions().position(harcourtAccom).title("Harcourt Hall"));
+        mMap.addMarker(new MarkerOptions().position(paradeAccom).title("Parade Green"));
+        mMap.addMarker(new MarkerOptions().position(sinnetAccom).title("Sinnet Court"));
+        mMap.addMarker(new MarkerOptions().position(warnefordAccom).title("Warneford Hall"));
+        mMap.addMarker(new MarkerOptions().position(westminsterAccom).title("Westminster Hall"));
+        mMap.addMarker(new MarkerOptions().position(paulAccom).title("Paul Kent Hall"));
+        mMap.addMarker(new MarkerOptions().position(sladeAccom).title("Slade Park"));
+
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(headingtonCampus, 10f));
+
     }
 }
