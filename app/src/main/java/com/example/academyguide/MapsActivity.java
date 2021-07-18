@@ -43,5 +43,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        // Campus Positions
+        LatLng headingtonCampus = new LatLng(51.75500081819575, -1.2241743397247018);
+        LatLng harcourtCampus = new LatLng(51.740449420462056, -1.2918205792736384);
+        LatLng wheatleyCampus = new LatLng(51.749293946182775, -1.1271403402225533);
+        LatLng swindonCampus = new LatLng(51.56040700208553, -1.8172305124859913);
+        LatLng marstonCampus = new LatLng(51.762032883566775, -1.2328155199681345);
+        LatLng headhillCampus = new LatLng(51.754182202136676, -1.228725102591681);
+
     }
 }
